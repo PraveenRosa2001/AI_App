@@ -5,7 +5,8 @@
       "src": "package.json",
       "use": "@vercel/node",
       "config": {
-        "buildCommand": "npm install --platform=linux --arch=x64 @rollup/rollup-linux-x64-gnu && npm run build"
+        "nodeVersion": "18.x",
+        "installCommand": "npm install --force"
       }
     }
   ]
