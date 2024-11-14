@@ -13,14 +13,19 @@
   padding: 20px;
   color: #585858;
 }
-
-.main .nav p {
+.main .nav .img{
+  width: 120px;
+  height: 120px;
+}
+.main .nav p{
   font-weight: 800;
-  font-size: 32px;
+  font-size: 20px;
 }
 
 .main .nav img {
-  width: 40px;
+  margin-top: -25px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
 }
 .main .main-container {

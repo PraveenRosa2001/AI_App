@@ -17,9 +17,8 @@ const Main = () => {
   return (
     <div className="main">
       <div className="nav">
-      <img className= "img" src={assets.logo_icon} alt="" />
-        <p>ROSE AI</p>
-        <img src={assets.user_icon} alt="" />
+      <img className= "img" src={assets.logo_origin} alt="" />
+        
       </div>
       <div className="main-container">
         {!showResult ? (
