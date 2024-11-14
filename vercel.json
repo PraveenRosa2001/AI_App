@@ -1,14 +1,6 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "package.json",
-        "use": "@vercel/node",
-        "config": {
-          "nodeVersion": "18.x",
-          "installCommand": "yarn install --frozen-lockfile",
-          "buildCommand": "yarn build"
-        }
-      }
-    ]
+    "framework": "vite",
+    "buildCommand": "yarn install --frozen-lockfile && yarn build",
+    "devCommand": "yarn dev",
+    "outputDirectory": "dist"
   }
