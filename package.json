@@ -5,13 +5,19 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "npm install @rollup/rollup-linux-x64-gnu",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "@rollup/rollup-linux-x64-gnu": "4.9.0",
+    "rollup": "^4.9.0"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
