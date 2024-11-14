@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "npm install @rollup/rollup-linux-x64-gnu",
-    "build": "vite build",
+    "build": "yarn install && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -14,8 +13,10 @@
     "@google/generative-ai": "^0.17.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "@rollup/rollup-linux-x64-gnu": "4.9.0",
-    "rollup": "^4.9.0"
+    "@rollup/rollup-linux-x64-gnu": "^4.9.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "rollup": "^4.9.0",
+    "vite": "latest"
   },
   "engines": {
     "node": "18.x"
