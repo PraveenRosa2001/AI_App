@@ -1,12 +1,14 @@
 {
   "name": "gemini-clone",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "dev": "vite",
-    "prebuild": "npm install @rollup/rollup-linux-x64-gnu",
-    "build": "vite build",
+    "build": "yarn install && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -15,10 +17,9 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "@rollup/rollup-linux-x64-gnu": "4.9.0",
-    "rollup": "^4.9.0"
-  },
-  "engines": {
-    "node": "18.x"
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "rollup": "^4.9.0",
+    "vite": "latest"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
